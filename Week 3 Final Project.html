@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        padding: 2%;
+        border: 5px dotted white;
+        text-align: center;
+        color: white;
+      }
+
+      img {
+        width: 900px;
+        border: 1px inset white;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+
+      p {
+        padding: 2%;
+        line-height: 1.5;
+        font-size: 20px;
+        text-justify: distribute-all-lines;
+        color: rgb(255, 255, 255);
+        text-align: justify;
+      }
+
+      button {
+        margin: 0 auto;
+        transition: all 200ms ease-in-out;
+        border: 2px solid rgb(255, 255, 255);
+        font-weight: 900;
+        background: orange;
+        font-size: 20px;
+        display: block;
+        padding: 2%;
+        border-radius: 40px;
+      }
+
+      h3 {
+        margin: 0 auto;
+        width: 350px;
+        border: 1px solid white;
+        text-align: center;
+        color: white;
+      }
+
+      h5 {
+        font-weight: 100;
+        text-align: center;
+        color: rgb(214, 214, 214);
+        font-size: 16px;
+      }
+
+      .body_background {
+        padding: 4% 6%;
+        margin: 0 auto;
+        background: radial-gradient(
+          circle at -8.9% 51.2%,
+          rgb(255, 124, 0) 0%,
+          rgb(255, 124, 0) 15.9%,
+          rgb(255, 163, 77) 15.9%,
+          rgb(255, 163, 77) 24.4%,
+          rgb(19, 30, 37) 24.5%,
+          rgb(24, 24, 30) 66%
+        );
+      }
+
+      .background_style {
+        max-width: 900px;
+        background: linear-gradient(
+          109.6deg,
+          rgb(36, 45, 57) 11.2%,
+          rgb(16, 37, 60) 51.2%,
+          rgb(0, 0, 0) 98.6%
+        );
+        padding: 1%;
+        margin: 0 auto;
+        background: linear-gradient(112.1deg, rgb(32, 38, 57) rgb(63, 76, 119));
+        box-shadow: 6px 2px red, -1em 0 0.4em rgb(0, 176, 18);
+      }
+      .paragraph_container {
+        width: 800px;
+        box-shadow: 4px 4px 16px rgba(255, 159, 16, 0.546);
+        border: 0.5px solid rgb(255, 128, 0);
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255, 0.15);
+      }
+
+      .display_pictures {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+      }
+
+      .more_info {
+        transition: all 200ms ease-in-out;
+        text-decoration: none;
+        color: rgb(255, 203, 182);
+        font-size: 20px;
+        margin: 0 auto;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-color: greenyellow;
+      }
+      .more_info:hover {
+        text-decoration: underline;
+        color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body_background">
+      <div class="background_style">
+        <h1>- ––––•(-• PASTEIS DE NATA •-)•–––– -</h1>
+        <div class="display_pictures">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/801/original/Pasteis-de-Nata-2-tart-portuguese-6108-scaled.jpg?1676045568"
+            alt=" Pasteis de Nata *"
+          />
+        </div>
+        <br />
+        <div class="paragraph_container">
+          <p>
+            Pastel de nata is a Portuguese egg custard tart pastry, optionally
+            dusted with cinnamon. Outside Portugal, they are particularly
+            popular in other parts of Western Europe, Asia and former Portuguese
+            colonies, such as Brazil, Mozambique, Macau, Goa and East Timor.
+          </p>
+        </div>
+        <br />
+        <div class="paragraph_container">
+          <p>
+            The cuisine of Japan was influenced by Portuguese traders during the
+            16th century, and culturally important Japanese baked goods
+            including pan (パン) (from Portuguese pão, bread) and castella have
+            their origins in this period. Pastel de nata is one of these. In
+            addition to the traditional form of the pastry, some variations have
+            been developed especially for the Japanese market by adding green
+            tea flavoring. This green tea pastel de nata was eventually exported
+            to South Korea and other Asian markets.
+            <br />
+            <a
+              class="more_info"
+              href="https://www.allrecipes.com/recipe/269064/portuguese-custard-tarts-pasteis-de-nata/"
+              target="_blank"
+              >Learn more about Pasteis de Nata on *ALL RECIPES* 👈</a
+            >
+          </p>
+
+          <h3>You aren't a member 😿</h3>
+          <br />
+        </div>
+        <br />
+        <button>👩‍🍳Learn Now👩‍🍳</button>
+        <h5>Coded by Fernanda Santiago</h5>
+      </div>
+    </div>
+    <script>
+      function member_apply(applicant) {
+        let member = document.querySelector("h3");
+        member.innerHTML = applicant;
+      }
+
+      function click_button() {
+        alert("Welcome!");
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let apply = prompt(
+          "Would you like to apply to our free cooking courses?👩‍🍳"
+        );
+        apply.trim();
+        apply.toLocaleLowerCase();
+
+        if (apply === "yes") {
+          member_apply(`${name}, Now you are a member!🥳`);
+          alert(`${name}, We'll be in touch!📧`);
+        } else {
+          alert("Thank you for visiting us!");
+        }
+      }
+
+      let learn_button = document.querySelector("button");
+      learn_button.addEventListener("click", click_button);
+    </script>
+  </body>
+</html>
