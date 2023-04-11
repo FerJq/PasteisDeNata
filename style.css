@@ -6,7 +6,7 @@ h1 {
 }
 
 img {
-  width: 900px;
+  width: 800px;
   border: 1px inset white;
   border-radius: 20px;
   display: block;
@@ -65,17 +65,21 @@ h5 {
 }
 
 .background_style {
+  border-radius: 20px;
   max-width: 900px;
-  background: linear-gradient(
-    109.6deg,
-    rgb(36, 45, 57) 11.2%,
-    rgb(16, 37, 60) 51.2%,
-    rgb(0, 0, 0) 98.6%
+  background: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 15.9%,
+    rgb(255, 163, 77) 15.9%,
+    rgb(255, 163, 77) 24.4%,
+    rgb(19, 30, 37) 24.5%,
+    rgb(19, 30, 37) 66%
   );
   padding: 1%;
   margin: 0 auto;
-  background: linear-gradient(112.1deg, rgb(32, 38, 57) rgb(63, 76, 119));
-  box-shadow: 6px 2px red, -1em 0 0.4em rgb(0, 176, 18);
+  background: linear-gradient(112.1deg, rgb(32, 38, 57) rgb(224, 147, 31));
+  box-shadow: 6px 2px red, -1em 0 0.4em rgb(255, 196, 0);
 }
 .paragraph_container {
   width: 800px;
@@ -84,7 +88,7 @@ h5 {
   max-width: 100%;
   margin: 0 auto;
   border-radius: 20px;
-  background-color: rgb(255, 255, 255, 0.15);
+  background-color: rgba(189, 71, 71, 0.8);
 }
 
 .display_pictures {
